@@ -132,7 +132,7 @@ a {
     position: relative;
     padding-top: 50%;
     /* margin-top: 70px; */
-    background: url('./img/baiviet-bg.jpg') top center / cover no-repeat;
+    background: url('../img/baiviet-bg.jpg') top center / cover no-repeat;
 }
 
 #slider .slider-container {
