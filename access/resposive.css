@@ -1,0 +1,33 @@
+/* PC */
+@media(min-width: 64em) {
+    
+}
+
+/* Tablet */
+@media(min-width: 46.25em) and (max-width:63.9375em) {
+    .input-form form {
+        margin-top: 100px;
+    }
+}
+
+/*Tablet and Mobile*/
+@media(max-width:63.9375em) {
+    #header {
+        height: 7.5em;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header .header-logo, #nav {
+        align-self: center;
+    }
+}
+
+/* Mobile */
+@media(max-width: 46.1875em) {
+
+    .right-arrow {
+        display: none;
+    }
+}
