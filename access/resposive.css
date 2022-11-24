@@ -5,6 +5,7 @@
 
 /* Tablet */
 @media(min-width: 46.25em) and (max-width:63.9375em) {
+    
     .input-form form {
         margin-top: 100px;
     }
@@ -12,21 +13,47 @@
 
 /*Tablet and Mobile*/
 @media(max-width:63.9375em) {
+    * {
+        font-size: 14px;
+    }
     #header {
         height: 7.5em;
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
-
     #header .header-logo, #nav {
         align-self: center;
+    }
+    #nav {
+        justify-content: center;
+    }
+    #nav .nav-btn {
+        border: none;
+        background-color: transparent;
+        color: #000;
+        font-size: 0.865em;
+        text-transform: none;
+    }
+    #nav .nav-btn:hover {
+        color: #1c86ef;
+    }
+    #reviewer {
+        margin-left: 0;
     }
 }
 
 /* Mobile */
 @media(max-width: 46.1875em) {
-
+    #nav {
+        /* justify-content: space-around; */
+    }
+    #nav .subnav1 {
+        width: 100vw;
+    }
+    #nav .subnav li a{
+        text-align: center;
+    }
     .right-arrow {
         display: none;
     }
