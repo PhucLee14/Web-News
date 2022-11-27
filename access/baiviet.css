@@ -41,37 +41,40 @@ a {
 }
 
 #header {
+    display: flex;
     position: fixed;
     z-index: 999;
     top: 0;
     right: 0px;
-    padding-right: 38px;
+    padding: 0 60px;
     left: 0;
-    height: 70px;
+    height: 60px;
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(6px);
 }
 
 #nav li {
     cursor: pointer;
-    height: 70px;
+    height: 60px;
 }
 
 #header .logo {
     float: left;
-    height: 70px;
-    line-height: 70px;
-    padding-left: 60px;
+    height: 60px;
+    line-height: 60px;
     /* width: 25%; */
 }
 
 /* #header .logo img {
-    height: 70px;
+    height: 60px;
     width: 90%; 
 } */
 
 #nav {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
     right: 20px;
     float: right;
 }
@@ -84,11 +87,11 @@ a {
 }
 
 #nav a {
-    line-height: 70px;
+    line-height: 60px;
     text-decoration: none;
     font-weight: 700;
     color: #fff;
-    font-size: 15px;
+    font-size: 0.875em;
 }
 
 .subnav1 {
@@ -130,12 +133,13 @@ a {
 }
 
 #nav .nav-btn {
-    padding: 12px 20px;
+    align-self: center;
+    padding: 12px 16px;
     border-radius: 24px;
     border: none;
     color: #fff;
     background-color: #119b74;
-    font-size: 10px;
+    font-size: 0.625em;
 }
 #nav .nav-btn:hover {
     opacity: 0.7;
@@ -144,7 +148,7 @@ a {
 }
 
 #nav .right-arrow {
-    font-size: 8px;
+    font-size: 0.5em;
     font-weight: 900;
     padding-left: 4px;
 }
@@ -180,18 +184,18 @@ a {
 }
 
 .slider-title {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 30px;
 }
 
 .slider-title i {
     color: #ff5ba7;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding-right: 10px;
 }
 
 .slider-smart-popup {
-    font-size: 10rem;
+    font-size: 10em;
     font-weight: 900;
     display: flex;
     justify-content: space-evenly;
@@ -214,7 +218,7 @@ a {
 }
 
 .slider-description {
-    font-size: 3.4rem;
+    font-size: 3.4em;
     font-weight: 900;
     letter-spacing: -0.08em;
     /* text-shadow: 0 0 10px rgba(0,0,0,0.4); */
@@ -226,7 +230,7 @@ a {
 
 .slider-sub-description p{
     width: 854.55px;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     /* left: 0; */
     right: 0;
     text-align: center;
@@ -239,17 +243,17 @@ a {
 .slider-link a {
     color: #ff5ba7;
     transition: .5s;
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .slider-link i {
-    font-size: 0.85rem;
+    font-size: 0.85em;
     padding-left: 8px;
 }
 
 .slider-link a:hover {
     opacity: .8;
-    font-size: 1.28rem;
+    font-size: 1.28em;
 }
 
 #content {
@@ -260,7 +264,7 @@ a {
 }
 
 #content .news {
-    font-family: Slabo;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
     color: #ff5ba7;
     font-weight: 700;
@@ -270,11 +274,15 @@ a {
     width: 100%;
 }
 
+#content img:hover {
+    opacity: 0.7;
+}
+
 .news-title h1{
     font-size: 3.75em;
     letter-spacing: 0.5px;
     font-weight: 100;
-    font-family: Slabo;
+    font-family: 'Courier New', Courier, monospace;
     margin: 8px 0;
     max-width: 800px;
 }
@@ -320,13 +328,15 @@ a {
     border-bottom: 1px solid #e2e2e2;
     font-family: HelveticaNeue, sans-serif;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .news-content {
-    font-family: Hapna;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
+    letter-spacing: -1px;
 }
 
 .news-main {
@@ -335,11 +345,11 @@ a {
 }
 
 .news-content .paragraph p {
+    font-weight: 100;
     margin: 16px 0;
 }
 
 .news-content .paragraph p span {
-    font-family: Slabo;
     font-weight: 900;
 }
 
@@ -360,10 +370,10 @@ a {
 }
 
 .news-note .note-title {
-    font-family: Slabo;
+    font-family: 'Courier New', Courier, monospace;
     padding-right: 48px;
     border-right: 1px solid #e2e2e2;
-    font-size: 1.125em;
+    font-size: 1em;
 }
 
 .news-note .note-content {
@@ -378,6 +388,7 @@ a {
     border-bottom: 1px solid #e2e2e2;
     font-family: HelveticaNeue;
     font-style: italic;
+    letter-spacing: 1px;
 }
 
 .news-poster {
@@ -406,6 +417,7 @@ a {
     width: 100%;
     padding: 20px 0;
     border-bottom: 1px solid #fff;
+    font-weight: 100;
 }
 
 .poster-post a {
@@ -417,6 +429,8 @@ a {
     background-color: #32335a;
     padding: 20px 0;
     border-bottom: 1px solid #fff;
+    font-weight: 100;
+    font-size: 0.875em;
 }
 
 .post-first {
