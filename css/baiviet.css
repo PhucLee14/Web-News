@@ -442,6 +442,129 @@ a {
     padding-left: 20px;
 }
 
+.destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destination-section {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 300px - 16px);
+    margin-left: -16px;
+    margin-top: 16px;
+}
+
+.destination-place {
+    padding: 0 16px;
+    color: #000;
+    border-right: 1px solid #e2e2e2;
+    border-top: none;
+}
+
+.destination-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 133%;
+}
+
+.destination-sydney {
+    background-image: url('../img/sydney.jpg');
+}
+
+.destination-london {
+    background-image: url('../img/london.jpg');
+}
+
+.destination-qatar {
+    background-image: url('../img/qatar.jpg');
+}
+
+.destination-tokyo {
+    background-image: url('../img/tokyo.jpg');
+}
+
+.destination-name {
+    margin-top: 16px;
+}
+
+.destination-content {
+    margin-top: 8px;
+    font-size: 0.75em;
+}
+
+.destination-explore {
+    margin-top: 16px;
+}
+
+.destination-btn {
+    width: calc(100% - 300px - 16px);
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.destination-btn a{
+    border: 1px solid #e2e2e2;
+    color: #000;
+    padding: 16px 80px;
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    -webkit-font-smoothing: antialiased;
+    transition: color 0.2s linear;
+}
+
+.destination-btn a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.paid-content {
+    display: flex;
+}
+
+.paid-header {
+    font-size: 0.875em;
+    font-weight: 700;
+    padding: 24px 0;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paid-header > p {
+    font-size: 1.25em;
+}
+
+.paid-section {
+    display: flex;
+    margin-top: 24px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.paid-section a {
+    margin: 0 8px;
+}
+
+.paid-section h3 {
+    color: #000;
+    font-weight: 100;
+    font-size: 0.975em;
+    padding: 8px 0;
+}
+
+.paid-section p {
+    color: rgba(0,0,0,0.4);
+    font-weight: 100;
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+.paid-section h3:hover {
+    color: #cb2026;
+}
+
 #footer {
     margin-top: 40px;
     background-color: #172133;
