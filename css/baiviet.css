@@ -40,6 +40,16 @@ a {
     max-width: 634px !important;
 }
 
+.invalid .form-error {
+    color: red;
+    font-size: 0.75em;
+    margin-top: -16px;
+}
+
+.form-group.invalid .modal-input {
+    border-color: red;
+}
+
 #header {
     display: flex;
     position: fixed;
