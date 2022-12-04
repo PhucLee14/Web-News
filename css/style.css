@@ -577,12 +577,12 @@ a {
 
 .footer-service .footer-social {
     padding-top: 20px;
-    margin-left: -10px;
 }
 
 .footer-service .footer-social a {
-    font-size: 1em;
-    padding: 0 10px;
+    font-size: 16px;
+    padding-right: 20px;
+    overflow: hidden;
 }
 
 .footer-service .footer-social i {
@@ -590,7 +590,7 @@ a {
 }
 
 .footer-service .footer-social i:hover{
-    font-size: 1.75em;
+    transform: scale(2);
     /* transition: .3s; */
 }
 
