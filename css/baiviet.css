@@ -134,8 +134,11 @@ a {
     border-radius: 24px;
     border: none;
     color: #fff;
-    background-color: #119b74;
+    background-color: #1dc69f;
     font-size: 0.625em;
+    font-weight: 700;
+    transition: .3s;
+    text-transform: uppercase;
 }
 #nav .nav-btn:hover {
     opacity: 0.7;
@@ -151,7 +154,7 @@ a {
 
 #slider {
     position: relative;
-    padding-top: 50%;
+    padding-top: 100vh;
     /* margin-top: 70px; */
     background: url('../img/baiviet-bg.jpg') top center / cover no-repeat;
 }
@@ -177,6 +180,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 12px;
+    /* margin-top: 60px; */
 }
 
 .slider-title {
@@ -186,20 +191,22 @@ a {
 
 .slider-title i {
     color: #ff5ba7;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-right: 10px;
 }
 
 .slider-smart-popup {
-    font-size: 10em;
+    font-size: 10vw;
     font-weight: 900;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    transform: translateX(-0.25em);
 }
 
 .slider-smart-popup .word {
     position: relative;
-    margin: -30px 50px;
+    margin: -30px 3.25vw;
 }
 
 .slider-smart-popup span {
@@ -217,7 +224,7 @@ a {
     font-size: 3.4em;
     font-weight: 900;
     letter-spacing: -0.08em;
-    /* text-shadow: 0 0 10px rgba(0,0,0,0.4); */
+    margin-top: 20px;
 }
 
 .slider-sub-description {
@@ -225,9 +232,8 @@ a {
 }
 
 .slider-sub-description p{
-    width: 854.55px;
+    width: 62.5vw;
     font-size: 1.4em;
-    /* left: 0; */
     right: 0;
     text-align: center;
 }
