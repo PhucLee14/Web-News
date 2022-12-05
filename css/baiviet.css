@@ -692,6 +692,15 @@ a {
     padding-left: 20px;
 }
 
+.footer-service .footer-infor h2 {
+    font-size: 1.5em;
+    transform: translateX(-20px);
+}
+
+.footer-service .footer-infor h2 i {
+    color: #28beff;
+}
+
 .footer-service p {
     font-size: 14px;
     color: rgba(250,250,250,0.7);
