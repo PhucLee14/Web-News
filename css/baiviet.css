@@ -261,8 +261,14 @@ a {
 #content {
     margin-right: auto;
     margin-left: auto;
+    padding: 0 24px;
     margin-top: 48px;
     max-width: 1100px;
+}
+
+#content .content-title {
+    display: flex;
+    flex-direction: column;
 }
 
 #content .news {
@@ -282,7 +288,7 @@ a {
 
 .news-title h1{
     font-size: 3.75em;
-    letter-spacing: 0.5px;
+    letter-spacing: -2.5px;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     margin: 8px 0;
@@ -292,13 +298,13 @@ a {
 .news-title p {
     font-size: .75em;
     color: #9b9b9b;
-    margin: 16px 0 32px;
+    margin: 16px 0 12px;
 }
 
 .news-social {
     display: flex;
     justify-content:left;
-    margin: 16px 0;
+    margin: 60px 0 16px;
 }
 
 .news-social i {
@@ -324,6 +330,7 @@ a {
 
 .img-title {
     overflow: hidden;
+    margin: 0 -24px;
 }
 
 .img-title img {
@@ -340,6 +347,7 @@ a {
 
 .news-description {
     padding-bottom: 24px;
+    width: 634px;
     margin-top: 48px;
     margin-bottom: 24px;
     color: rgba(0,0,0,0.8);

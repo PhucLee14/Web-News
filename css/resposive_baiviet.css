@@ -1,6 +1,8 @@
 /* PC */
 @media(min-width: 66.5em) {
-    
+    #content .img-title {
+        margin: 0;
+    }
 }
 
 /* Tablet */
@@ -12,12 +14,12 @@
 
 /* Full tablet */
 @media(max-width: 63.9375em) {
-    
     #header {
         height: 7.5em;
         flex-direction: column;
         margin: 0;
         padding: 0;
+        font-size: 14px;
     }
 
     #header .header-logo, #nav {
@@ -39,6 +41,48 @@
     
     #nav .right-arrow {
         display: none;
+    }
+
+    #content {
+        margin-top: 24px;
+    }
+
+    #content .news {
+        margin-bottom: 24px;
+    }
+
+    #content .news-title {
+        margin: 0 auto;
+        width: 68%;
+        order: 2;
+    }
+
+    #content .news-title h1 {
+        font-size: 3em;
+    }
+
+    #content .news-social {
+        width: 68%;
+        margin: 24px auto;
+        order: 3;
+    }
+
+    #content .img-title {
+        order: 1;
+    }
+
+    #content .news-description {
+        width: 68%;
+        margin: 48px auto 24px;
+    }
+
+    #content .news-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .news-main {
+        margin: 0 auto;
     }
 }
 
