@@ -237,15 +237,27 @@
     #content .destination-section {
         width: 100vw;
         flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: -24px;
+        margin-right: -24px;
     }
 
     #content .destination-place {
-        width: 50vw;
+        width: calc(50vw - 24px);
         border: none;
+        padding: 16px 0;
     }
 
     #content .destination-content, .destination-explore {
         display: none;
+    }
+
+    #content .destination-btn a {
+        width: 100vw;
+    }
+
+    #content .destination-btn a:hover {
+        box-shadow: inset 100vw 0 0 0 #000;
     }
 
     #content .paid-section {
