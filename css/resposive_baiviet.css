@@ -234,6 +234,20 @@
         width: 100%;
     }
 
+    #content .destination-section {
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    #content .destination-place {
+        width: 50vw;
+        border: none;
+    }
+
+    #content .destination-content, .destination-explore {
+        display: none;
+    }
+
     #content .paid-section {
         flex-direction: column;
     }
