@@ -89,12 +89,12 @@ a {
     font-size: 0.875em;
 }
 
-.subnav1 {
-    width: 400px !important;
+#nav .subnav1 {
+    width: 400px;
 }
 
-.subnav2 {
-    min-width: 80px !important;
+#nav .subnav2 {
+    min-width: 80px;
 }
 
 #nav .subnav {

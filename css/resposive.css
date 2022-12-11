@@ -90,10 +90,16 @@
     }
 
     #nav .subnav1 {
-        width: 100vw;
+        margin-left: -3vw;
+        width: 93vw;
     }
 
-    #nav .subnav li a{
+    #nav .subnav2 {
+        margin-left: -47vw;
+        width: 92vw;
+    }
+
+    #nav .subnav li{
         text-align: center;
     }
 
@@ -142,9 +148,10 @@
         margin: 80px 20px 0;
     }
 
-    #content-form {
+    .content-form {
         flex-direction: column;
         align-items: center;
+        padding-top: 0;
     }
 
     #content .product-form {
