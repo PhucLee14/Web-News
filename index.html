@@ -18,7 +18,7 @@
         <div id="header">
             <div class="header-logo">
                 <a href="">
-                    <img src="./img/news-logo.webp" alt="" class="logo">
+                    <img src="./img/news-logo.png" alt="" class="logo">
                 </a>    
             </div>
             <ul id="nav">
@@ -152,7 +152,7 @@
                     <div class="author">
                         <div class="author-container">
                             <img src="./img/aurthor2.webp" alt="" class="author-img">
-                            <p class="author-description">""We are very happy with the support and the many updates and development offered by tagDiv web development company!"</p>
+                            <p class="author-description">""We are very happy with the support and the many updates and development offered by PhucLee's web development company!"</p>
                             <p class="author-name">Chabot Philippe</p>
                             <p class="author-infor">Senior IT Manager, unric.org</p>
                         </div>
@@ -171,7 +171,7 @@
             <div id="content-title">
                 <h2>Loaded with updates</h2>
                 <h1>Packed with features</h1>
-                <p>Building your business website, news, magazine, hobby, shop, blog, or any other website has never been easier. With tagDiv Composer, everything is fully customizable, right on the front end. Just mix, match, and arrange within a few clicks!</p>
+                <p>Building your business website, news, magazine, hobby, shop, blog, or any other website has never been easier. With PhucLee Composer, everything is fully customizable, right on the front end. Just mix, match, and arrange within a few clicks!</p>
             </div>
 
             <div id="content-form">
@@ -180,10 +180,10 @@
                     <div class="intro-form">
                         <h3 class="title">Meet the new & advanced</h3>
                         <h1 class="sub-title">French Polynesia to cap tourist numbers</h1>
-                        <p class="description">N12P Travel's weekly newsletter. Get news about destinations opening, inspiration for future adventures, plus the latest in aviation, food and drink, where to stay and other travel developments.</p>
+                        <p class="description">N14P Travel's weekly newsletter. Get news about destinations opening, inspiration for future adventures, plus the latest in aviation, food and drink, where to stay and other travel developments.</p>
                     </div>
                     <div class="product-img">
-                        <img src="./img/product-form-left.webp" alt="">
+                        <img src="./img/news-img-1_1.png" alt="">
                     </div>
                     <div class="form-btn">
                         <a href="./baiviet.html">
@@ -199,10 +199,10 @@
                     <div class="intro-form">
                         <h3 class="title">Discover our amazing</h3>
                         <h1 class="sub-title">Dubai: Hottest new tables for 2022</h1>
-                        <p class="description">N12P retains full editorial control over subject matter, reporting and frequency of the articles and videos within the sponsorship, in compliance with our policy.</p>
+                        <p class="description">N14P retains full editorial control over subject matter, reporting and frequency of the articles and videos within the sponsorship, in compliance with our policy.</p>
                     </div>
                     <div class="product-img">
-                        <img src="./img/product-form.webp" alt="">
+                        <img src="./img/news-img-2_1.png" alt="">
                     </div>
                     <div class="form-btn">
                         <a href="./baiviet2.html">
@@ -313,8 +313,8 @@
             </div>
 
             <div class="footer-contact">
-                <p>© 2022 tagdiv.com</p>
-                <p>Proudly made by tagDiv using the 
+                <p>© 2022 PhucLee</p>
+                <p>Proudly made by PhucLee using the 
                     <i class="fa-solid fa-heart heart-icon"></i>
                     <a target="_blank" href="https://themeforest.net/item/newspaper/5489609">Newspaper theme</a>. Powered by WordPress</p>
             </div>
@@ -386,7 +386,7 @@
                         </select>
                     </div>
 
-                    <input type="submit" value="Confirm" class="modal-confirm">
+                    <input type="submit" value="Confirm" class="modal-confirm" onclick="confirmModal()">
                 </form>
             </div>
 
@@ -397,45 +397,5 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script>
-        //modal
-        const buyBtns = document.querySelectorAll('.js-buy-news');
-        const modal = document.querySelector('.js-modal');
-        const modalClose = document.querySelector('.js-modal-close');
-        const modalContainer = document.querySelector('.js-modal-container');
-
-        function showBuyNews() {
-            modal.classList.add('modal-open');
-        }
-
-        function hideBuyNews() {
-            modal.classList.remove('modal-open');
-        }
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyNews);
-        }
-
-        modalClose.addEventListener('click', hideBuyNews);
-
-        modal.addEventListener('click',hideBuyNews);
-
-        modalContainer.addEventListener('click',function(event) {
-            event.stopPropagation();
-        })
-    </script>
-
-    <script>
-        //Validator
-        Validator({
-            form: '#modal-form',
-            rules:[
-                Validator.isContact('#modal-contact'),
-                Validator.isName('#modal-name'),
-                Validator.isAddress('#modal-address'),
-                Validator.isQuantity('#modal-quantity'),
-            ]
-        });
-    </script>
 </body>
 </html>

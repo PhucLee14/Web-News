@@ -16,7 +16,7 @@
         <div id="header">
             <div class="header-logo">
                 <a href="./index.html">
-                    <img src="./img/news-logo-white.webp" alt="" class="logo">
+                    <img src="./img/news-logo-white.png" alt="" class="logo">
                 </a>
             </div> 
             <ul id="nav">
@@ -115,12 +115,12 @@
                 </div>
             </div>
             <div class="news-description">
-                <p>Editor's Note — Sign up for <a href="#">Unlocking the World</a>, N12P Travel's weekly newsletter. Get news about destinations opening, inspiration for future adventures, plus the latest in aviation, food and drink, where to stay and other travel developments.</p>
+                <p>Editor's Note — Sign up for <a href="#">Unlocking the World</a>, N14P Travel's weekly newsletter. Get news about destinations opening, inspiration for future adventures, plus the latest in aviation, food and drink, where to stay and other travel developments.</p>
             </div>
             <div class="news-content">
                 <div class="news-main">
                     <div class="paragraph">
-                        <p><span>(N12P) - </span>The beautiful islands of French Polynesia might become more difficult to visit as the region announces a new sustainable tourism plan.</p>
+                        <p><span>(N14P) - </span>The beautiful islands of French Polynesia might become more difficult to visit as the region announces a new sustainable tourism plan.</p>
                         <p>Under the Fāri'ira'a Manihini 2027 (FM27) five-year strategic mission, the French Polynesian government aims to set an annual cap of one foreign tourist per local resident -- about 280,000.</p>
                         <p>The Southern Pacific country includes popular destinations like Bora Bora, Mo'orea and Tahiti. Its capital, Papeete, is on Tahiti.</p>
                         <p>It's unclear whether the new visitor cap will apply to French nationals.</p>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="news-poster">
                     <div class="poster">
-                        <p>More from N12P</p>
+                        <p>More from N14P</p>
                         <div class="poster-post">
                             <a href="#">
                                 <img src="./img/post-1.jpg" alt="" title="Airport staff find cat trapped in suitcase">
@@ -360,8 +360,8 @@
             </div>
 
             <div class="footer-contact">
-                <p>© 2022 tagdiv.com</p>
-                <p>Proudly made by tagDiv using the 
+                <p>© 2022 PhucLee</p>
+                <p>Proudly made by PhucLee using the 
                     <i class="fa-solid fa-heart heart-icon"></i>
                     <a target="_blank" href="https://themeforest.net/item/newspaper/5489609">Newspaper theme</a>. Powered by WordPress
                 </p>
@@ -434,7 +434,7 @@
                         </select>
                     </div>
 
-                    <input type="submit" value="Confirm" class="modal-confirm">
+                    <input type="submit" value="Confirm" class="modal-confirm" onclick="confirmModal()">
                 </form>
             </div>
 
@@ -445,45 +445,5 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script>
-        //modal
-        const buyBtns = document.querySelectorAll('.js-buy-news');
-        const modal = document.querySelector('.js-modal');
-        const modalClose = document.querySelector('.js-modal-close');
-        const modalContainer = document.querySelector('.js-modal-container');
-
-        function showBuyNews() {
-            modal.classList.add('modal-open');
-        }
-
-        function hideBuyNews() {
-            modal.classList.remove('modal-open');
-        }
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyNews);
-        }
-
-        modalClose.addEventListener('click', hideBuyNews);
-
-        modal.addEventListener('click',hideBuyNews);
-
-        modalContainer.addEventListener('click',function(event) {
-            event.stopPropagation();
-        })
-    </script>
-
-    <script>
-        //Validator
-        Validator({
-            form: '#modal-form',
-            rules:[
-                Validator.isContact('#modal-contact'),
-                Validator.isName('#modal-name'),
-                Validator.isAddress('#modal-address'),
-                Validator.isQuantity('#modal-quantity'),
-            ]
-        });
-    </script>
 </body>
 </html>

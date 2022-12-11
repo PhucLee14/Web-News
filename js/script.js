@@ -1,3 +1,40 @@
+//modal
+const buyBtns = document.querySelectorAll('.js-buy-news');
+const modal = document.querySelector('.js-modal');
+const modalClose = document.querySelector('.js-modal-close');
+const modalContainer = document.querySelector('.js-modal-container');
+
+function showBuyNews() {
+    modal.classList.add('modal-open');
+}
+
+function hideBuyNews() {
+    modal.classList.remove('modal-open');
+}
+
+for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener('click', showBuyNews);
+}
+
+modalClose.addEventListener('click', hideBuyNews);
+
+modal.addEventListener('click',hideBuyNews);
+
+modalContainer.addEventListener('click',function(event) {
+    event.stopPropagation();
+})
+
+function confirmModal() {
+    var arr = document.getElementsByClassName('modal-input');
+    var name = arr[0].value;
+    var contact = arr[1].value;
+    var address = arr[2].value;
+    var number = arr[3].value;
+    if(name != "" && contact != "" && address != "" && number != "") {
+        alert('Done!')
+    }
+}
+
 function Validator(options) {
 
     function validate(inputElement, rule) {
@@ -77,3 +114,13 @@ Validator.isQuantity = function(selector) {
         }
     }
 }
+
+Validator({
+    form: '#modal-form',
+    rules:[
+        Validator.isName('#modal-name'),
+        Validator.isContact('#modal-contact'),
+        Validator.isAddress('#modal-address'),
+        Validator.isQuantity('#modal-quantity'),
+    ]
+});
