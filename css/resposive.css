@@ -83,6 +83,7 @@
 
     #nav > li {
         padding: 0 6px;
+        font-size: 13px;
     }
 
     #nav .nav-btn {
@@ -128,8 +129,16 @@
 
     .buy-btn {
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+    }
+
+    .buy-btn a{
+        padding-left: 28vw;
+        padding-right: 28vw;
+    }
+    
+    .buy-btn a:hover {
+        padding-left: 30vw;
+        padding-right: 30vw;
     }
 
     #reviewer .review-quantity {

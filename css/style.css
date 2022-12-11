@@ -227,7 +227,7 @@ p {
     position: relative;
     background-color: transparent;
     border: none;
-    margin-top: 16px;
+    margin-top: 32px;
     cursor: pointer;
     /* width: 160px; */
 }

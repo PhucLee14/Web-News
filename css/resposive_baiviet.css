@@ -176,6 +176,7 @@
 
     #nav > li {
         padding: 0 6px;
+        font-size: 13px;
     }
 
     #nav .nav-btn {
