@@ -132,6 +132,7 @@ p {
 #nav .subnav a{
     transition: .3s;
     line-height: 48px;
+    display: block;
 }
 
 /* #nav:hover>li>a{
@@ -224,11 +225,8 @@ p {
 
 .buy-btn {
     position: relative;
-    transition: .4s ease-in-out;
     background-color: transparent;
-    border: 2px solid #3b7ef9;
-    padding: 16px 10px 16px 60px;
-    border-radius: 40px;
+    border: none;
     margin-top: 16px;
     cursor: pointer;
     /* width: 160px; */
@@ -236,6 +234,10 @@ p {
 
 .buy-btn a {
     color: #3b7ef9;
+    border: 2px solid #3b7ef9;
+    padding: 18px 10px 18px 60px;
+    border-radius: 40px;
+    transition: .4s ease-in-out;
 }
 
 .buy-btn span {
@@ -247,14 +249,14 @@ p {
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
-    left: 5px;
+    left: 8px;
     top: 50%;
     transform: translateY(-50%);
     transition: .4s ease-in-out;
 }
 
-.buy-btn:hover {
-    padding: 16px 60px 16px 10px;
+.buy-btn:hover a{
+    padding: 18px 60px 18px 10px;
     background-color: #3b7ef9;
 }
 
